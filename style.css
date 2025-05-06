@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stylish&display=swap');
+
+
+*{
+    font-family: "Stylish", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+header{
+    background-color: salmon;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+
+.logo{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+font-weight: 800;
+font-style: 1.9em;
+
+}
+
+.navigation a{
+color: black;
+text-decoration: none;
+font-weight: 500;
+font-size: 1.1em;
+padding-left: 30px;
+}
+
+
+.navigation a:hover{
+    color: brown;
+}
+
+section{
+    padding: 100px 200px;
+
+}
+
+.main {
+    padding-left: 35%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background: url(images/healthy-eating-ingredients-1296x728-header.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+     filter: blur(5px);/* Adjust blur strength here */
+    z-index: -1;
+    background-size: inherit;
+    background-position: inherit;
+    background-attachment: inherit;
+}
+
+
+
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color:  rgb(15, 213, 117);
+    font-size: 2.7em;
+    font-weight: 600;
+}
+
+.main h3{
+    color: rgb(15, 213, 117);
+    font-size: 1.9em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px ;
+    margin-bottom: 5px;
+}
+
+
+.social-icon a{
+    color:black;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+     font-size: 2.2em;
+     font-weight: 800;
+     margin-bottom: 5px;
+     color: salmon;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+ .icon{
+    color: salmon;
+    font-size: 8em;
+    text-align: center;
+
+ }
+
+.info{
+    text-align: center;
+}
+
+ .info h3{
+    color: salmon;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+ }
+
+
+
+
+
+ .DIET{
+  background-color: seagreen;
+
+ }
+
+
+ .DIET.content{
+    margin-top: 30px;
+
+ }
+
+
+ .DIET-card{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 5em;
+    width: 10em;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.2s ease;
+
+ }
+
+ .DIET-card:hover{
+    transform: scale(1.1);
+ }
+
+
+ .DIET-image img{
+    width: 100%;
+ }
+
+ .DIET-card:hover .DIET-image{
+    opacity: 0.9;
+ }
+
+ .DIET-info{
+    padding: 1em;
+
+ }
+
+
+ .DIET-category{
+    font-size: 0.8em;
+    color: #000;
+      
+ }
+
+ .diet-title{
+    justify-content: space-between;
+    display: flex;
+text-transform: uppercase;
+font-weight: 800;
+margin-top: 10px;
+ }
+
+.more-details{
+   text-decoration: none;
+    color: salmon;
+}
+
+.more-details:hover{
+    color: sienna ;
+}
+
+.ABOUT .icon{
+    font-size: 4.5em;
+    
+}
+
+ .ABOUT .info h3{
+    color: #000;
+ 
+}
+
+
+.ABOUT .info p{
+    font-size: 1.5em;
+}
+
+.footer{
+    background-color:salmon ;
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+      
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+
+}
+
+.footer-title span{
+    color: seagreen; 
+}
+
+.footer.social-icon a{
+    padding: 0 12px 0 0;
+}
+
+
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+.navigation a{
+    padding-left: 10px;
+
+}
+
+.title{
+    font-size: 1.8em;
+}
+
+.section{
+    padding: 80px 20px;
+}
+.main-content h2 {
+font-size: 1em;
+}
+.main-content h3{
+    font-size: 1.6em;
+}
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media(max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media(max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
+
+
+.healthy-snacks-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+
+.healthy-snacks-section h2 {
+    font-size: 28px;
+    color: #28a745;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.healthy-snacks-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+.healthy-snacks-section p::first-letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.image-container {
+    text-align: right;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
